@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'questaregular';
+    src: url('2-Questa_Regular-webfont.eot');
+    src: url('2-Questa_Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('2-Questa_Regular-webfont.woff2') format('woff2'),
+         url('2-Questa_Regular-webfont.woff') format('woff'),
+         url('2-Questa_Regular-webfont.ttf') format('truetype'),
+         url('2-Questa_Regular-webfont.svg#questaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+
+html{
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+#content{
+  pointer-events: none;
+}
+
+.row{
+  pointer-events: auto;
+}
+
+body{
+  color:#ffffff;
+  background-color: #000000;
+}
+
+.row-centered {
+    text-align:center;
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+h1{
+  font-size:3.75rem;
+  font-family: Montserrat;
+  font-weight: 900;
+}
+
+h2{
+  font-size:2.5rem;
+  font-family: 'questaregular';
+  color: #B05A5F;
+}
+
+h3{
+  font-size:1.25rem;
+  font-family: Montserrat;
+  font-weight: 900;
+}
+
+p {
+  font-family: 'questaregular';
+  font-size: 1.25rem;
+  line-height: 2.1rem;
+  padding-bottom: 1.55rem;
+}
+
+p:first-child{
+  padding-top: 1.55rem;
+}
+
+p:first-child:first-letter { float: left; color: #B05A5F; font-size: 3.75rem; line-height: 4.2rem; padding-right: 3px; font-family: Montserrat}
+
+.imgBig {
+  min-width:100%;
+  position: fixed;
+  top:0px;
+  left:50%;
+  transform: translateX(-50%);
+  z-index: -100
+}
+
+
+.imgHead{
+  /*min-height: 75%;*/
+  /*max-height: 95%;*/
+  height:75%;
+}
+
+.imgHead iframe{
+  position:absolute;
+  width: 100%;
+}
+
+.imgHead video.video-stream{
+  /*width: 100% !important;*/
+  object-fit: cover;
+}
+
+.divider{
+  height:100%;
+  display: none;
+}
+
+.video{
+  padding: 50px 0px;
+  background-color: #000000;
+}
+
+.video iframe{
+  height: 100%;
+  width: 100%;
+  top:0px;
+  /*left:50%;*/
+  /*transform: translateX(-50%);*/
+}
+
+.container-fluid{
+  background-color:#000000;
+}
+.soundcite{
+  background-color: #B05A5F !important;
+}
+
+.control {
+  font-family: Montserrat;
+  font-size: 10rem;
+  font-weight: 900;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1000;
+  top:0px;
+  text-align: center;
+  display: table;
+}
+
+.controlplay{
+  display:table-cell;
+  vertical-align:middle;
+  color: white;
+}
+
+.controlplay:hover{
+  color:#B05A5F;
+}
+
+.footerRow{
+  background-color: #B05A5F;
+  /*color: black;*/
+}
