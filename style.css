@@ -19,6 +19,8 @@ html{
 
 #content{
   pointer-events: none;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .row{
@@ -106,7 +108,7 @@ p:first-child:first-letter { float: left; color: #B05A5F; font-size: 3.75rem; li
 }
 
 .video{
-  padding: 50px 0px;
+  padding: 75px 0px;
   background-color: #000000;
 }
 
@@ -151,4 +153,64 @@ p:first-child:first-letter { float: left; color: #B05A5F; font-size: 3.75rem; li
 .footerRow{
   background-color: #B05A5F;
   /*color: black;*/
+}
+
+.footerRow p{
+  font-family: Montserrat;
+}
+
+
+#moreWrap {
+  background-color: #000000;
+  z-index: 100;
+  pointer-events: auto;
+}
+
+#moreTab {
+  z-index: 100;
+  cursor: pointer;
+}
+
+#moreVids {
+  /*width: 100%;*/
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+#moreVids::-webkit-scrollbar {
+  display: none;
+}
+
+.list-inline {
+  white-space:nowrap;
+  margin-bottom: 0px;
+}
+
+.thumb{
+  width: 400px;
+  height: 225px;
+}
+
+.tab{
+  background-color: #B05A5F;
+  padding: 20px;
+  margin:0px;
+  /*text-align: center;*/
+}
+
+@media (max-width:768px) {
+  .thumb{
+    width:300px;
+    height:169px;
+  }
+  h1{
+    font-size:2.5rem;
+  }
+  h2{
+    font-size: 1.875rem;
+  }
+}
+
+h1,h2,h3{
+  text-align: center;
 }
